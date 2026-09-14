@@ -18,6 +18,14 @@ export const examples = [
         color: 'purple',
         Icon: Server,
     },
+    {
+        id: 3,
+        method: 'Offline',
+        verb: 'Get',
+        description: 'Lista séries consumidas no SessionStorage.',
+        color: 'purple',
+        Icon: HardDrive,
+    },
 ];
 
 
