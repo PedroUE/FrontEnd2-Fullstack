@@ -31,11 +31,11 @@ export const examples = [
 
 export const crud = [
     {
-        id: 1,
-        method: 'ApiKey',
+        id: 2,
+        method: 'Read',
         verb: 'Get',
-        description: 'Lista series com api-key exposta.',
+        description: 'Lista todas as series.',
         color: 'purple',
-        Icon: KeyRound,
+        Icon: Server,
     },
 ];
