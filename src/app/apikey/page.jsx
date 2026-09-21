@@ -13,7 +13,7 @@ export default function ApiKeyPage() {
     async function buscarSerie() {
       try {
         const resp = await axios.get(
-          `${process.env.NEXT_PUBLIC_API_URL_SERIES}?limit=50`,
+          `${process.env.NEXT_PUBLIC_URL_SERIES}?limit=50`,
           {
             headers: { "x-api-key": process.env.NEXT_PUBLIC_API_KEY },
           },
