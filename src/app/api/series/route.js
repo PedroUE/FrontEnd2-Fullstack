@@ -18,3 +18,19 @@ export async function GET(req) {
         return NextResponse.json(data, { status });
     }
 }
+
+export async function POST(req) {
+    const body = await req.json();
+
+    try {
+        const response = await axios.post(process.env.API_URL_SERIES, body, {
+            headers: { 'x-api-key': process.env.API_KEY }
+        });
+
+        return NextResponse.json(response.data);
+    } catch (error) {
+        const status = 500
+        const data = { error: 'Erro ao criar séries.' };
+        return NextResponse.json(data, { status });
+    }
+}
